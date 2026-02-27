@@ -1,14 +1,10 @@
 package umg.edu.gt.handler;
 
-/**
- * Modelo obligatorio.
- * priority: 1 = alta, 2 = normal
- */
 public class Song {
     private final String title;
     private final String artist;
-    private final int durationSeconds; // 5 a 30
-    private final int priority;        // 1 o 2
+    private final int durationSeconds; 
+    private final int priority;        
 
     public Song(String title, String artist, int durationSeconds, int priority) {
         if (title == null || title.trim().isEmpty()) {
