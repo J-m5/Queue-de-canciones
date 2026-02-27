@@ -1,13 +1,5 @@
 package umg.edu.gt.datastructure.queue;
 
-/**
- * Cola (FIFO) implementada manualmente con nodos enlazados.
- *
- * Reglas:
- * - enqueue O(1)
- * - dequeue O(1)
- * - no se exponen nodos internos
- */
 public class Queue<T> {
 
     private static final class Node<E> {
@@ -19,14 +11,11 @@ public class Queue<T> {
         }
     }
 
-    // Referencias privadas
     private Node<T> head;
     private Node<T> tail;
 
-    // Tamaño
     private int size;
 
-    /** Inserta al final (O(1)) */
     public void enqueue(T item) {
         Node<T> node = new Node<>(item);
 
@@ -41,7 +30,6 @@ public class Queue<T> {
         size++;
     }
 
-    /** Remueve del frente (O(1)) */
     public T dequeue() {
         if (isEmpty()) {
             throw new QueueEmptyException("Cannot dequeue from an empty queue");
@@ -51,7 +39,6 @@ public class Queue<T> {
         head = head.next;
         size--;
 
-        // Si quedó vacía, tail también debe ser null
         if (head == null) {
             tail = null;
         }
