@@ -1,8 +1,5 @@
 package umg.edu.gt.handler;
 
-/**
- * Estructura extra (historial): Stack/LIFO manual con nodos enlazados.
- */
 public class SongStack {
 
     private static final class Node {
