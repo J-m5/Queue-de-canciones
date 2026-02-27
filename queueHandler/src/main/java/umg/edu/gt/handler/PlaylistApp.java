@@ -5,8 +5,6 @@ public class PlaylistApp {
     public static void main(String[] args) {
         PlaylistPlayer player = new PlaylistPlayer();
 
-        // Canciones solicitadas (duraciones variadas 5-30s)
-        // Prioridad 1 = alta, 2 = normal
         player.addSong(new Song("Billie Jean", "Michael Jackson", 12, 1));
         player.addSong(new Song("Shape of You", "Ed Sheeran", 9, 2));
         player.addSong(new Song("Rolling in the Deep", "Adele", 15, 1));
