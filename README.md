@@ -1,8 +1,8 @@
-# 🎵 Spotify Simulation usando Cola (FIFO) creada desde cero (Java + Maven)
+#  Spotify Simulation usando Cola (FIFO) creada desde cero (Java + Maven)
 
 Este repositorio contiene una simulación tipo Spotify que reproduce canciones **segundo a segundo** usando una **Cola (FIFO)** implementada manualmente (sin `Queue`, `LinkedList`, `ArrayDeque` ni estructuras equivalentes del JDK).
 
-## 📁 Estructura obligatoria del repositorio
+##  Estructura obligatoria del repositorio
 
 ```
 /umg.edu.gt.data-structure.queue
@@ -13,14 +13,14 @@ Este repositorio contiene una simulación tipo Spotify que reproduce canciones *
 
 ---
 
-# ✅ Requisitos
+#  Requisitos
 
 - Java 8 o superior
 - Maven
 
 ---
 
-# 🧱 Parte A — Librería: Cola propia (FIFO)
+#  Parte A — Librería: Cola propia (FIFO)
 
 **Proyecto:** `umg.edu.gt.data-structure.queue`
 
@@ -51,11 +51,11 @@ cd umg.edu.gt.data-structure.queue
 mvn clean install
 ```
 
-📌 **Evidencia requerida:** captura del `mvn clean install` guardada en `evidencias/`.
+ **Evidencia requerida:** captura del `mvn clean install` guardada en `evidencias/`.
 
 ---
 
-# 🎧 Parte B — Simulación de reproducción
+#  Parte B — Simulación de reproducción
 
 **Proyecto:** `queueHandler`
 
@@ -89,7 +89,7 @@ Además se muestra una **barra de progreso** tipo:
 
 ---
 
-# 🔥 Parte C — Sistema de prioridad
+#  Parte C — Sistema de prioridad
 
 Para soportar prioridad sin romper FIFO interno:
 
@@ -104,7 +104,7 @@ Reglas:
 
 ---
 
-# 🚀 Parte D — Extensiones implementadas (>= 2)
+#  Parte D — Extensiones implementadas (>= 2)
 
 En este proyecto se implementaron **3** mejoras:
 
@@ -116,7 +116,7 @@ En este proyecto se implementaron **3** mejoras:
 
 ---
 
-# 🧪 Cómo compilar el handler
+#  Cómo compilar el handler
 
 > Importante: primero debes ejecutar `mvn clean install` en la librería.
 
@@ -127,11 +127,11 @@ cd queueHandler
 mvn clean package
 ```
 
-📌 **Evidencia requerida:** captura del `mvn clean package` guardada en `evidencias/`.
+ **Evidencia requerida:** captura del `mvn clean package` guardada en `evidencias/`.
 
 ---
 
-# ▶️ Cómo ejecutar desde consola
+#  Cómo ejecutar desde consola
 
 Desde `queueHandler` (después de compilar):
 
@@ -139,7 +139,7 @@ Desde `queueHandler` (después de compilar):
 java -jar target/queueHandler-1.0.0.jar
 ```
 
-📌 **Evidencia requerida:** capturas mostrando:
+ **Evidencia requerida:** capturas mostrando:
 
 - ejecución desde consola
 - logs de reproducción segundo a segundo
@@ -147,7 +147,7 @@ java -jar target/queueHandler-1.0.0.jar
 
 ---
 
-# 🎵 Canciones usadas
+#  Canciones usadas
 
 - Billie Jean — Michael Jackson
 - Shape of You — Ed Sheeran
@@ -159,9 +159,3 @@ java -jar target/queueHandler-1.0.0.jar
 
 ---
 
-# 📝 Notas importantes
-
-- No se utilizan estructuras del JDK para colas.
-- El repositorio debe compilar al clonarse siguiendo el orden:
-  1) `umg.edu.gt.data-structure.queue` → `mvn clean install`
-  2) `queueHandler` → `mvn clean package`
